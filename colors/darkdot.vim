@@ -1,8 +1,8 @@
 " Vim color file
 " Maintainer:	David Lazar <david#c7.campus.utcluj.ro>
-" Last Change:	Fri Jan 31 01:08:13 UTC 2003
-" Version:	2.0
-" URL:		http://c7.campus.utcluj.ro/~david/darkdot.vim
+" Last Change:	Thu May 20 16:27:13 EEST 2004
+" Version:	2.2
+" URL:		http://www.c7obs.net/~david/stuff/darkdot.vim
 " 
 " This colorscheme script was created using Hans Fugal's colorscheme template
 
@@ -13,16 +13,16 @@ if exists("syntax_on")
 endif
 let g:colors_name="darkdot"
 
-hi Normal	cterm=none			gui=none	guibg=#434F61	guifg=#bbbbbb
+hi Normal	cterm=none			gui=none	guibg=#101020	guifg=#a8aaaa
 hi Cursor	cterm=none					guibg=#44ff44	guifg=#000000
 hi link CursorIM Cursor
 hi Directory				ctermfg=cyan				guifg=#44ffff
-hi DiffAdd				ctermfg=yellow		guibg=#080808	guifg=#ffff00
-hi DiffDelete				ctermfg=darkgray	guibg=#080808	guifg=#444444
-hi DiffChange				ctermfg=white		guibg=#080808	guifg=#ffffff
-hi DiffText				ctermfg=darkred		guibg=#080808	guifg=#bb0000
+hi DiffAdd	ctermbg=blue		ctermfg=yellow		guibg=#080888	guifg=#ffff00
+hi DiffDelete	ctermbg=black		ctermfg=darkgray	guibg=#080808	guifg=#444444
+hi DiffChange	ctermbg=black					guibg=#080808	guifg=#ffffff
+hi DiffText	ctermbg=black		ctermfg=darkred		guibg=#080808	guifg=#bb0000
 hi ErrorMsg	ctermbg=darkred		ctermfg=white		guibg=#880000	guifg=#ffffff
-hi Folded				ctermfg=darkblue			guifg=#000088
+hi Folded	ctermbg=black		ctermfg=darkblue	guibg=black	guifg=#000088
 hi link FoldColumn Folded
 hi IncSearch	ctermbg=black		ctermfg=gray		guibg=#000000	guifg=#bbcccc
 hi LineNr				ctermfg=yellow		guibg=#404040	guifg=#ffff00
@@ -30,7 +30,7 @@ hi ModeMsg				ctermfg=white				guifg=#ffffff
 hi MoreMsg				ctermfg=green				guifg=#44ff44
 hi NonText				ctermfg=blue				guifg=#4444ff
 hi Question				ctermfg=yellow				guifg=#ffff00
-hi link Search IncSearch
+hi Search	ctermbg=NONE		ctermfg=green		guibg=NONE	guifg=green
 hi SpecialKey				ctermfg=blue				guifg=#4444ff
 hi StatusLine	cterm=none ctermbg=darkcyan	ctermfg=white	gui=none	guibg=#00aaaa	guifg=#ffffff
 hi StatusLineNC	cterm=none ctermbg=gray		ctermfg=black	gui=none	guibg=#bbbbbb	guifg=#000000
@@ -45,17 +45,17 @@ hi WarningMsg				ctermfg=yellow				guifg=#ffff00
 "hi Tooltip		
 
 " syntax highlighting groups
-hi Comment	ctermfg=gray		guifg=#000000
-hi Constant	ctermfg=darkcyan	guifg=#00aaaa
-hi Identifier 	ctermfg=white		guifg=#ffffff
-hi Statement 	ctermfg=cyan		guifg=#44ffff
-hi PreProc	ctermfg=darkcyan	guifg=#00aaaa
-hi Type		ctermfg=white		guifg=#ffffff
-hi Special	ctermfg=white		guifg=#ffffff
-hi Underlined	ctermfg=blue		guifg=#4444ff
-hi Ignore	ctermfg=darkgray	guifg=#444444
-hi Error	ctermbg=black		ctermfg=darkred		guibg=#000000	guifg=#bb0000
-hi Todo		ctermbg=darkred		ctermfg=yellow		guibg=#aa0006	guifg=#fff300
+hi Comment	ctermfg=blue			guifg=#4444ff
+hi Constant	ctermfg=darkcyan		guifg=#00aaaa
+hi Identifier 	ctermfg=white			guifg=#ffffff
+hi Statement 	ctermfg=cyan			guifg=#44ffff
+hi PreProc	ctermfg=darkcyan		guifg=#00aaaa
+hi Type		ctermfg=white			guifg=#ffffff
+hi Special	ctermfg=blue	cterm=bold	guifg=#6666ff	gui=bold
+hi Underlined	ctermfg=blue			guifg=#4444ff
+hi Ignore	ctermfg=darkgray		guifg=#444444
+hi Error	ctermbg=black			ctermfg=darkred		guibg=#000000	guifg=#bb0000
+hi Todo		ctermbg=darkred			ctermfg=yellow		guibg=#aa0006	guifg=#fff300
 
 hi link Character	Constant
 hi link Number		Constant
