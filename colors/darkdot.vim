@@ -1,8 +1,8 @@
 " Vim color file
-" Maintainer:	David Lazar <david_bv # yahoo . com>
-" Last Change:	Sun Feb 16 13:46:00 EET 2003
-" Version:	1.0
-" URL:		http://freemail.utcluj.ro/david/darkdot.vim
+" Maintainer:	David Lazar <david#c7.campus.utcluj.ro>
+" Last Change:	Fri Jan 31 01:08:13 UTC 2003
+" Version:	2.0
+" URL:		http://c7.campus.utcluj.ro/~david/darkdot.vim
 " 
 " This colorscheme script was created using Hans Fugal's colorscheme template
 
@@ -13,7 +13,7 @@ if exists("syntax_on")
 endif
 let g:colors_name="darkdot"
 
-hi Normal	cterm=none			gui=none	guibg=#000000	guifg=#bbbbbb
+hi Normal	cterm=none			gui=none	guibg=#434F61	guifg=#bbbbbb
 hi Cursor	cterm=none					guibg=#44ff44	guifg=#000000
 hi link CursorIM Cursor
 hi Directory				ctermfg=cyan				guifg=#44ffff
@@ -45,7 +45,7 @@ hi WarningMsg				ctermfg=yellow				guifg=#ffff00
 "hi Tooltip		
 
 " syntax highlighting groups
-hi Comment	ctermfg=blue		guifg=#4444ff
+hi Comment	ctermfg=gray		guifg=#000000
 hi Constant	ctermfg=darkcyan	guifg=#00aaaa
 hi Identifier 	ctermfg=white		guifg=#ffffff
 hi Statement 	ctermfg=cyan		guifg=#44ffff
