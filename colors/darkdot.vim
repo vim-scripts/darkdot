@@ -1,7 +1,7 @@
 " Vim color file
-" Maintainer:	David Lazar <david#c7.campus.utcluj.ro>
-" Last Change:	Thu May 20 16:27:13 EEST 2004
-" Version:	2.2
+" Maintainer:	David Lazar <david_bv|wants no spam|at|yahoo|dot|com>
+" Last Change:	Thu, 11 May 2006 13:25:27 -0700
+" Version:	2.5
 " URL:		http://www.c7obs.net/~david/stuff/darkdot.vim
 " 
 " This colorscheme script was created using Hans Fugal's colorscheme template
@@ -13,7 +13,7 @@ if exists("syntax_on")
 endif
 let g:colors_name="darkdot"
 
-hi Normal	cterm=none			gui=none	guibg=#101020	guifg=#a8aaaa
+hi Normal	cterm=none			gui=none	guibg=#00285e	guifg=#d6ebf0
 hi Cursor	cterm=none					guibg=#44ff44	guifg=#000000
 hi link CursorIM Cursor
 hi Directory				ctermfg=cyan				guifg=#44ffff
@@ -28,7 +28,7 @@ hi IncSearch	ctermbg=black		ctermfg=gray		guibg=#000000	guifg=#bbcccc
 hi LineNr				ctermfg=yellow		guibg=#404040	guifg=#ffff00
 hi ModeMsg				ctermfg=white				guifg=#ffffff
 hi MoreMsg				ctermfg=green				guifg=#44ff44
-hi NonText				ctermfg=blue				guifg=#4444ff
+hi NonText				ctermfg=darkgray			guifg=#ff4444
 hi Question				ctermfg=yellow				guifg=#ffff00
 hi Search	ctermbg=NONE		ctermfg=green		guibg=NONE	guifg=green
 hi SpecialKey				ctermfg=blue				guifg=#4444ff
