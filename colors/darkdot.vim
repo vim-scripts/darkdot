@@ -1,7 +1,7 @@
 " Vim color file
 " Maintainer:	David Lazar <david_bv|wants no spam|at|yahoo|dot|com>
-" Last Change:	Thu, 11 May 2006 13:25:27 -0700
-" Version:	2.5
+" Last Change:	Tue, 25 Jul 2006 17:11:03 +0300
+" Version:	2.6
 " URL:		http://www.c7obs.net/~david/stuff/darkdot.vim
 " 
 " This colorscheme script was created using Hans Fugal's colorscheme template
@@ -28,7 +28,7 @@ hi IncSearch	ctermbg=black		ctermfg=gray		guibg=#000000	guifg=#bbcccc
 hi LineNr				ctermfg=yellow		guibg=#404040	guifg=#ffff00
 hi ModeMsg				ctermfg=white				guifg=#ffffff
 hi MoreMsg				ctermfg=green				guifg=#44ff44
-hi NonText				ctermfg=darkgray			guifg=#ff4444
+hi NonText				ctermfg=blue				guifg=#4444ff
 hi Question				ctermfg=yellow				guifg=#ffff00
 hi Search	ctermbg=NONE		ctermfg=green		guibg=NONE	guifg=green
 hi SpecialKey				ctermfg=blue				guifg=#4444ff
@@ -78,3 +78,20 @@ hi link Delimiter	Special
 hi link SpecialComment	Special
 hi link Debug		Special
 hi link FoldColumn	Folded
+
+if v:version >= 700
+	hi link Pmenu		StatusLineNC
+	hi link PmenuSel	StatusLine
+	hi link PmenuThumb	StatusLine
+	hi link PmenuSbar	StatusLineNC
+
+	hi SpellBad	ctermbg=none	ctermfg=red	gui=undercurl	guisp=#ff6666
+	hi SpellCap	ctermbg=none	ctermfg=blue	gui=undercurl	guisp=#6666ff
+	hi SpellRare	ctermbg=none	ctermfg=magenta	gui=undercurl	guisp=#ff66ff
+
+	hi TabLine	cterm=inverse	ctermbg=none	ctermfg=none	gui=none	guibg=#bbbbbb	guifg=#000000
+	hi TabLineSel	cterm=bold	ctermbg=none	ctermfg=none	gui=none	guibg=#bbbbbb	guifg=#000000
+	hi TabLineFill 	cterm=inverse	ctermbg=none	ctermfg=none	gui=none	guibg=#bbbbbb	guifg=#000000
+
+	hi MatchParen	cterm=bold	ctermbg=none	ctermfg=yellow	gui=bold	guibg=bg	guifg=#ffffbb
+endif
