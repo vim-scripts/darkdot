@@ -1,10 +1,10 @@
 " Vim color file
 " Maintainer:	David Lazar <david_bv|wants no spam|at|yahoo|dot|com>
-" Last Change:	Tue, 25 Jul 2006 17:11:03 +0300
-" Version:	2.6
+" Last Change:	Fri, 25 Aug 2006 16:30:00 +0300
+" Version:	2.7
 " URL:		http://www.c7obs.net/~david/stuff/darkdot.vim
 " 
-" This colorscheme script was created using Hans Fugal's colorscheme template
+" This colorscheme script was created using Hans Fugal's colorscheme template.
 
 set background=dark
 hi clear
@@ -93,5 +93,5 @@ if v:version >= 700
 	hi TabLineSel	cterm=bold	ctermbg=none	ctermfg=none	gui=none	guibg=#bbbbbb	guifg=#000000
 	hi TabLineFill 	cterm=inverse	ctermbg=none	ctermfg=none	gui=none	guibg=#bbbbbb	guifg=#000000
 
-	hi MatchParen	cterm=bold	ctermbg=none	ctermfg=yellow	gui=bold	guibg=bg	guifg=#ffffbb
+	hi MatchParen	cterm=bold	ctermbg=none	ctermfg=green	gui=bold	guibg=bg	guifg=#44ff44
 endif
